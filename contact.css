@@ -1,0 +1,69 @@
+
+
+@media screen and (max-width:576px){
+    body {background-image: url("desk.jpg");
+        background-size:cover;
+        background-repeat:no-repeat;
+        opacity: 95%;
+    }
+    h1{ 
+        color:honeydew; font-family: Lobster;font-size: 10vw; text-align: center;border-style: solid; border-radius: 20px;padding-top:2vw;padding-bottom:2vw; padding-left: 10vw;padding-right:10vw; background-color:rgb(209, 161, 161);
+    }
+    .container {
+        display: grid;
+        grid-template-columns: .5fr 1fr .5fr;
+        grid-template-rows: .5fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". appointment ."
+          ". contact-info .";
+      }
+      
+      .appointment { grid-area: appointment;   }
+      
+      .contact-info {grid-area: contact-info; color: rgb(73,146,152);border-style: solid; border-radius: 20px; padding-left: 10vw;padding-right:10vw; background-color:rgb(209, 161, 161);border-color:white; text-align:center; text-justify:center; align-items:center;justify-content:center;padding-top:10vw; padding-bottom:10vw;
+    font-size:5vw;  }
+    .form{align-content:space-around;}
+}
+
+@media screen and (min-width:577px){
+    body {background-image: url("desk.jpg"); background-size:cover; background-repeat:no-repeat; opacity:95%;}
+.container{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .5fr;
+    gap:20px 2px;
+    grid-auto-flow:row;
+    grid-template-areas:
+    "appointment ."
+    ". contact-info";}
+    h1{ 
+        color:honeydew; font-family: Lobster;font-size: 7vw; text-align: center;
+    }
+    .appointment { grid-area: appointment;justify-items: center; align-content: center; border-style: solid; border-radius: 20px; background-color:rgb(209, 161, 161); }
+
+    .contact-info{grid-area: contact-info; color:rgb(73,146,152);border-style: solid; border-radius: 20px; padding-left: 10vw;padding-right:10vw; background-color:rgb(209, 161, 161);border-color: black; text-align:center; padding-top:15px; padding-bottom:15px;
+    font-size:5vw;  }}
+
+@media screen and (min-width:977px){
+     body {background-image:url("desk.jpg");background-size:cover; background-repeat:no-repeat;opacity:95%;}
+    .container {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: .25fr .5fr .5fr; 
+        gap:10px 10px;
+        grid-auto-flow:row;
+        grid-template-areas:
+        "appointment appointment appointment"
+        ".  contact-info ."
+        ". contact-info .";}
+    h1{ 
+            color:honeydew; font-family: Lobster;font-size: 3vw; text-align: center;
+        }
+    .appointment { grid-area: appointment;justify-items: center; align-content: center; border-style: solid; border-color:white;border-radius: 20px; background-color:rgb(73,146,152);padding-top:1vw; }
+    .contact-info{grid-area: contact-info; color:rgb(73,146,152);border-style: solid; border-radius: 20px; background-color:rgb(209, 161, 161);border-color: white; text-align:center; padding-top:15px; padding-bottom:15px;
+        font-size:2vw; padding-top:5vw;padding-bottom:5vw; }
+}
+
+

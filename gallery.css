@@ -1,0 +1,180 @@
+body {
+    font-family: 'Lobster', cursive;
+font-size: 25vw; text-shadow: 2px 2px rgb(156, 135, 135);}
+.galleryimage{width:100%; height:100%; object-fit: cover;}
+
+@media screen and (max-width:576px){
+    
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title"
+      "pic1"
+      "pic2"
+      "pic3" 
+      "pic4"
+      "pic5"
+      "pic6"
+      "pic7" 
+      "pic8"
+      "pic9" 
+      "pic10"
+      "pic11" 
+      "pic12"
+      "pic13"  
+      "pic14"
+      "pic15" 
+      "pic16";
+  }
+  
+  .title { display:flex; grid-area: title; align-items:center; justify-content:center;
+     background-image:url("blowdryers.jpg"); background-size:cover;}
+  .pic1 {display:flex; grid-area: pic1;  }
+  
+  .pic2 {display:flex; grid-area: pic2; }
+  
+  .pic3 { display:flex; grid-area: pic3; }
+  
+  .pic4 {display:flex; grid-area: pic4; }
+  
+  .pic5 { display:flex; grid-area: pic5; }
+  
+  .pic6 {display:flex; grid-area: pic6; }
+  
+  .pic7 {display:flex; grid-area: pic7; }
+  
+  .pic8 {display:flex; grid-area: pic8; }
+  
+  .pic9 {display:flex; grid-area: pic9; }
+  
+  .pic10 {display:flex; grid-area: pic10; }
+  
+  .pic11 {display:flex; grid-area: pic11; }
+  
+  .pic12 {display:flex; grid-area: pic12; }
+  
+  .pic13 {display:flex; grid-area: pic13; }
+  
+  .pic14 {display:flex; grid-area: pic14; }
+  
+  .pic15 {display:flex;  grid-area: pic15; }
+  
+  .pic16 {display:flex; grid-area: pic16; } }
+
+  @media screen and (min-width:577px) {
+    body {background-color:rgb(73,146,152) ;
+        font-family: 'Lobster', cursive;
+    font-size: 15vw; text-shadow: 2px 2px rgb(209, 161, 161);}
+    .container{
+        display: grid;
+        margin-left:.5em;
+        margin-right:.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title title"
+      "pic1 pic2" 
+      "pic3 pic4"
+      "pic5 pic6"
+      "pic7 pic8"
+      "pic9 pic10" 
+      "pic11 pic12"
+      "pic13 pic14" 
+      "pic15 pic16";}
+      .galleryimage {width:100%; height:100%; object-fit: cover;}
+      .title {display:flex; grid-area: title;background-image:url("blowdryers.jpg"); 
+        background-size:cover;  align-items:center; justify-content:center; }
+   .pic1 {display:flex; grid-area: pic1;  }
+   
+   .pic2 {display:flex; grid-area: pic2; }
+   
+   .pic3 { display:flex; grid-area: pic3; }
+   
+   .pic4 {display:flex; grid-area: pic4; }
+   
+   .pic5 { display:flex; grid-area: pic5; }
+   
+   .pic6 {display:flex; grid-area: pic6; }
+   
+   .pic7 {display:flex; grid-area: pic7; }
+   
+   .pic8 {display:flex; grid-area: pic8; }
+   
+   .pic9 {display:flex; grid-area: pic9; }
+   
+   .pic10 {display:flex; grid-area: pic10; }
+   
+   .pic11 {display:flex; grid-area: pic11; }
+   
+   .pic12 {display:flex; grid-area: pic12; }
+   
+   .pic13 {display:flex; grid-area: pic13; }
+   
+   .pic14 {display:flex; grid-area: pic14; }
+   
+   .pic15 {display:flex;  grid-area: pic15; }
+   
+   .pic16 {display:flex; grid-area: pic16; }
+      
+  }
+  @media screen and (min-width:977px){
+    body {
+        background-color:rgb(209, 161, 161);
+        font-family: 'Lobster', cursive;
+    font-size: 15vw; text-shadow: 2px 2px rgb(209, 161, 161);}
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "title title title title"
+          "pic1 pic2 pic3 pic4"
+          "pic5 pic6 pic7 pic8"
+          "pic9 pic10 pic11 pic12"
+          "pic13 pic14 pic15 pic16";
+      }
+      
+      .title { grid-area: title; }
+      
+      .pic1 { grid-area: pic1; }
+      
+      .pic2 { grid-area: pic2; }
+      
+      .pic3 { grid-area: pic3; }
+      
+      .pic4 { grid-area: pic4; }
+      
+      .pic5 { grid-area: pic5; }
+      
+      .pic6 { grid-area: pic6; }
+      
+      .pic7 { grid-area: pic7; }
+      
+      .pic8 { grid-area: pic8; }
+      
+      .pic9 { grid-area: pic9; }
+      
+      .pic10 { grid-area: pic10; }
+      
+      .pic11 { grid-area: pic11; }
+      
+      .pic12 { grid-area: pic12; }
+      
+      .pic13 { grid-area: pic13; }
+      
+      .pic14 { grid-area: pic14; }
+      
+      .pic15 { grid-area: pic15; }
+      
+      .pic16 { grid-area: pic16; }
+      
+
+  }

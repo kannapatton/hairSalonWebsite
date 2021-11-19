@@ -1,0 +1,209 @@
+body{font-family: 'Lobster', cursive;}
+@media screen and (max-width:576px) {
+
+.container {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2.5fr  1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.header{ display:flex; grid-area:header;
+    border-style:solid;
+    color:rgb(209,161,161);
+    border-width:5px;
+    background-image: url("glitter.jpg");
+    }
+nav {
+    align-items:center;
+    display:flex;
+    justify-content:space-evenly;
+    width:100%;
+   
+}
+nav> a {
+    display:flex;
+    height:10px;
+    width:60px;
+    color:rgb(101, 228, 233);
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    align-content:center;
+    justify-content: center;
+    background-color:rgb(156, 135, 135);
+    border:2px solid rgb(209,161,161);
+}
+.main {display:flex; grid-area:main;
+border-style:solid;
+color:rgb(209,161,161);
+border-width:5px;
+background-image: url("classychairs.jpg");
+background-size:cover;
+align-items:center;
+justify-content: center;
+}
+.footer {display:flex; grid-area:footer;
+border-style:solid;
+border-width:5px;
+height:200px;
+align-items: center;
+color:rgb(209,161,161);
+background-image: url("glitter.jpg");
+justify-content:center;
+}
+h1 {
+    background-color:rgb(156, 135, 135);
+    border-radius:20px;
+    border-width:auto;
+    padding-left:5px;
+    padding-right:5px;
+    
+    color:rgb(101, 228, 233);
+}
+}
+
+@media screen and (min-width:577px){
+.container {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr 2.5fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "footer header"
+      "main header"
+      "main header";
+  }
+  
+  .main { display:flex; grid-area:main;
+    border-style:solid;
+    color:rgb(209,161,161);
+    border-width:5px;
+    background-image: url("blowdryers.jpg");
+    background-size:cover;
+    align-items:center;
+    justify-content: center; }
+  
+  .header { display:flex;  grid-area: header;
+border-style:solid;
+color:rgb(209,161,161);
+border-width:5px;
+background-image:url("stars.jpg");
+background-size:cover;
+align-items:center;
+justify-content:center; }
+nav {
+    align-items:center;
+    display:flex;
+    flex-direction: column;
+    gap:150px;
+    justify-content:space-around;
+    width:100%;
+    padding-bottom:2%;
+}
+nav> a {
+    display:flex;
+    height:10%;
+    width:60%;
+    color:rgb(101,228,233);
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    align-content:center;
+    justify-content: center;
+    background-color:rgb(156, 135, 135);
+    border:2px solid rgb(101, 228, 233);
+}
+  
+  .footer { display:flex; grid-area:footer;
+    border-style:solid;
+    border-width:5px;
+    height:200px;
+    align-items: center;
+    color:rgb(209,161,161);
+    background-image: url("glitter.jpg");
+    justify-content:center; }
+
+h1 {
+    background-color:rgb(156, 135, 135);
+    border-radius:20px;
+    border-width:auto;
+    padding-left:5px;
+    padding-right:5px;
+    font-size:50px;
+    color:rgb(20, 22, 22); }
+}
+
+@media screen and (min-width:996px) {
+    .container {
+        background-color:grey;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 1fr 2.5fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "footer footer"
+          "header main";
+      }
+      
+      .footer { display:flex; grid-area: footer;
+    background-image: url("open.jpg");
+    background-size: cover; 
+    justify-content: center;
+    align-content: center;}
+      
+      .header {display:flex;
+        justify-content: center;
+        align-content:center;
+        margin-top: auto;
+         grid-area: header; }
+      
+      .main { grid-area: main; }
+      nav {
+        align-items:center;
+        justify-content: center;
+        display:flex;
+        flex-direction: column;
+        margin-top: auto;
+        gap:150px;
+        width:100%;
+        padding-bottom:2%;
+    }
+    nav> a {
+        display:flex;
+        height:10%;
+        width:60%;
+        font-size: xx-large;
+        color:rgb(101,228,233);
+        border-radius:10px;
+        padding:20px;
+        text-align:center;
+        justify-content: center;
+        align-content:center;
+        background-color:rgb(156, 135, 135);
+        border:2px solid rgb(209,161,161);
+    }
+      
+    h1 {
+        background-color:rgb(156, 135, 135);
+        border-radius:20px;
+        border-width:auto;
+        padding-left:10px;
+        padding-right:15px;
+        padding-bottom:10px;
+        font-size:50px;
+        color:rgb(20, 22, 22); }
+    }
+
+
+
+}
+    
