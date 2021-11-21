@@ -50,7 +50,7 @@
     .contact-info{grid-area: contact-info; color:rgb(73,146,152);border-style: solid; border-radius: 20px; border-color:white; padding-left: 10vw;padding-right:10vw; background-color:rgb(209, 161, 161); text-align:center; padding-top:15px; padding-bottom:15px;
     font-size:3vw;  }}
 
-@media screen and (min-width:977px){
+@media screen and (min-width:992px){
      body {background-image:url("desk.jpg");background-size:cover; background-repeat:no-repeat;opacity:95%;}
      input{font-size:2vw;}
     label{font-size:36px;}

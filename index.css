@@ -141,7 +141,7 @@ h1 {
     color:rgb(20, 22, 22); }
 }
 
-@media screen and (min-width:996px) {
+@media screen and (min-width:992px) {
     .container {
         background-color:grey;
         display: grid;
