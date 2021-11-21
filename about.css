@@ -1,0 +1,77 @@
+
+@media screen and (max-width:576px){
+    body{font-family: 'Lobster', cursive;background-color:rgb(209, 161, 161); }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .25fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "pic"
+          "story"
+          "content";
+      }
+      
+      .pic { grid-area: pic; display: flex; background-color:rgb(73,146,152); }
+    
+      .profile{object-fit: cover;
+            width: 100%;
+            max-height: 100%;
+        border-radius:20%; border-style:solid; border-color:rgb(209, 161, 161); }
+      
+      .story { grid-area: story; display: flex; text-align:center; justify-content: center;}
+      
+      .content{ grid-area: content; display: flex; text-align: center; justify-content: center;}
+
+}
+@media screen and (min-width:577px){
+    body{font-family: 'Lobster', cursive; background-color:rgb(73,146,152);}
+    .container {
+       
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "pic story"
+          "pic content";
+      }
+      h1{font-size:5em;}
+      .pic { grid-area: pic; display:flex; padding-top:2em; }
+      .profile{object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+    border-radius:20%;border-style:solid; border-color:rgb(209, 161, 161); }
+      .story { grid-area: story; display:flex; justify-content:center; }
+      
+      .content { grid-area: content; display:flex; justify-content:center; }
+      
+}
+
+@media screen and (min-width:977px){
+    body{font-family: 'Lobster', cursive; background-color:rgb(209, 161, 161);}
+    .container {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .25fr .5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "pic pic"
+          "story content";
+      }
+      h1{font-size:5em;}
+      
+      .pic { grid-area: pic; display:flex; justify-content:center; padding-top:5em; background-color:rgb(73,146,152); }
+      .profile{object-fit: cover;
+        width: 70%;
+        max-height: 80%;
+        border-radius:20%;border-style:solid; border-color:rgb(209, 161, 161); }
+      .story { grid-area: story; display:flex; justify-content:center;border-top: black; border-top-style:solid;}
+      
+      .content { grid-area: content; display:flex; justify-content:center; border-top: black;border-top-style: solid; }
+      
+}

@@ -66,7 +66,7 @@ font-size: 25vw; text-shadow: 2px 2px rgb(156, 135, 135);}
   .pic16 {display:flex; grid-area: pic16; } }
 
   @media screen and (min-width:577px) {
-    body {background-color:rgb(73,146,152) ;
+    body {background-color:rgb() ;
         font-family: 'Lobster', cursive;
     font-size: 15vw; text-shadow: 2px 2px rgb(209, 161, 161);}
     .container{

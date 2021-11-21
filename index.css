@@ -17,6 +17,7 @@ body{font-family: 'Lobster', cursive;}
 .header{ display:flex; grid-area:header;
     border-style:solid;
     color:rgb(209,161,161);
+    height:60vw;
     border-width:5px;
     background-image: url("glitter.jpg");
     }
@@ -52,7 +53,7 @@ justify-content: center;
 .footer {display:flex; grid-area:footer;
 border-style:solid;
 border-width:5px;
-height:200px;
+height:60vw;
 align-items: center;
 color:rgb(209,161,161);
 background-image: url("glitter.jpg");
@@ -61,10 +62,10 @@ justify-content:center;
 h1 {
     background-color:rgb(156, 135, 135);
     border-radius:20px;
+    font-size:12vw;
     border-width:auto;
     padding-left:5px;
-    padding-right:5px;
-    
+    padding-right:5px; 
     color:rgb(101, 228, 233);
 }
 }
@@ -104,7 +105,8 @@ nav {
     display:flex;
     flex-direction: column;
     gap:150px;
-    justify-content:space-around;
+    text-justify:center;
+    text-align:center;
     width:100%;
     padding-bottom:2%;
 }
@@ -125,7 +127,6 @@ nav> a {
   .footer { display:flex; grid-area:footer;
     border-style:solid;
     border-width:5px;
-    height:200px;
     align-items: center;
     color:rgb(209,161,161);
     background-image: url("glitter.jpg");
@@ -133,11 +134,10 @@ nav> a {
 
 h1 {
     background-color:rgb(156, 135, 135);
+    font-size:9vw;
     border-radius:20px;
-    border-width:auto;
     padding-left:5px;
     padding-right:5px;
-    font-size:50px;
     color:rgb(20, 22, 22); }
 }
 
@@ -156,30 +156,39 @@ h1 {
       
       .footer { display:flex; grid-area: footer;
     background-image: url("open.jpg");
-    background-size: cover; 
     justify-content: center;
     align-content: center;}
       
-      .header {display:flex;
-        justify-content: center;
-        align-content:center;
-        margin-top: auto;
-         grid-area: header; }
+      .header { display:flex;  grid-area: header;
+        border-style:solid;
+        color:rgb(209,161,161);
+        border-width:5px;
+        background-image:url("stars.jpg");
+        background-size:cover;
+        align-items:center;
+        justify-content:center; }
       
-      .main { grid-area: main; }
+      .main { grid-area: main; display:flex;
+        border-style:solid;
+        color:rgb(209,161,161);
+        border-width:5px;
+        background-image: url("blowdryers.jpg");
+        background-size:cover;
+        align-items:center;
+        justify-content: center;  }
       nav {
         align-items:center;
-        justify-content: center;
         display:flex;
         flex-direction: column;
-        margin-top: auto;
         gap:150px;
+        text-justify:center;
+        text-align:center;
         width:100%;
         padding-bottom:2%;
     }
     nav> a {
         display:flex;
-        height:10%;
+        height:35%;
         width:60%;
         font-size: xx-large;
         color:rgb(101,228,233);
@@ -199,7 +208,6 @@ h1 {
         padding-left:10px;
         padding-right:15px;
         padding-bottom:10px;
-        font-size:50px;
         color:rgb(20, 22, 22); }
     }
 
